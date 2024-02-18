@@ -1,0 +1,172 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* navbar */
+
+.nav-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0 30px;
+}
+
+header{
+    /* width: 100vw; [if i gave width 100vw the scroll bar gets added what to do or is it okay to not write width]*/  
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/772803/pexels-photo-772803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content:  center;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: rebeccapurple;
+    margin: 10px auto;
+    border-radius: 40px;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: purple;
+    border-radius: 20px;
+    color: white;
+}
+
+/* events  */
+
+.events{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    text-align: center;
+    font-size:4vmin;
+    color: bisque;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+margin: 0 90px;
+    justify-content: space-between;
+}
+
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+width: 200px;
+}
+
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/1234035/pexels-photo-1234035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.explore-content{
+width: 50%;
+padding: 50px;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.explore-content h1{
+    font-size: 7vmin;
+    margin: 50px;
+}
+
+.explore-content p{
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.row1{
+    display: flex;
+}
+
+.tours .row1 .col1{
+    width: 50%;
+    margin: 10px 30px;
+}
+
+.tours .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.image-gallery img{
+    width: 200px;
+}
+
+footer{
+    text-align: center;
+    background-color: gray;
+    color: wheat;
+}
+
+
+
+
+/* media queries */
+
+@media (max-width:612px) {
+    .nav-bar{
+        display: none;
+    }
+}
